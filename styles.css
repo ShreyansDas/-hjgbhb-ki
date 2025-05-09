@@ -1,11 +1,9 @@
-/* 1. Thhttps://codeshare.io/eme Variables */   
-:root {
-    --bg: #ffffff;
+ --bg: #ffffff;
     --card-bg: #accdeb;
     --primary: #9682da;
     --secondary: #bc85a3;
     --text: #333333;
-    --accent: #df0000;
+    --accent: #df6400;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
     --gap: 1.5rem;
@@ -43,10 +41,10 @@
     align-items: center;
     justify-content: center;
     background: var(--primary);
-    color: rgb(0, 0, 0);
+    color: white;
     padding: calc(var(--gap) * 2);
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(128, 59, 59, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   header h1 {
     font-family: var(--font-heading);
@@ -109,19 +107,24 @@
   }
 
   /* 8. Responsive Breakpoints */
-  @media (max-width: 768px)      /* Tablet */ 
+  @media (max-width: 768px) {       /* Tablet */ 
     #skills li,
-    #projects li 
+    #projects li {
       flex: 1 1 calc(50% - var)
-    
-  
-  @media; (max-width: 480px)        /* Mobile */ 
+    }
+  }
+  @media (max-width: 480px) {       /* Mobile */ 
     #skills li,
     #projects li {
       flex: 1 1 100%;
     }
     header h1 {
       font-size: 2rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+    }
+  }
     }
     section h2 {
       font-size: 1.5rem;
